@@ -160,7 +160,7 @@
     // ボタンの初期設定
     function init(){
         $('#btnA').prop('disabled', false);
-        $('#btnB').prop('disabled', false);
+        $('#btnB').prop('disabled', true);
         $('#btnC').prop('disabled', false);
         
     }
@@ -189,6 +189,8 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
       active = false;
+      $("btnB").prop("disabled",true);
+      $("btnA").prop("disabled",false);
         
         
     }
